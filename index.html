@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+  </head>
+  <body>
+    <h1 class="text-center">The Psychic Game</h1>
+    	<p>Guess what letter I'm thinking of</p>
+    	<p id="win">Wins: </p>
+    	<p id="loss">Losses: </p>
+    	<p id="guessLeft">Guesses Left: </p>
+    	<p id="yourGuess">Your Guesses so far: </p>
+
+
+    
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
+
+		var randomLetter = Math.floor(Math.random()*letters.length);
+
+		for (var i = 0; i < letters.length; i++) {
+			letters[i]
+
+			$("#randomLetter").on("click", function() {
+
+        	alert("You win!");
+		};
+
+		
+		
+	});
+	</script>
+
+
+  </body>
+</html>
